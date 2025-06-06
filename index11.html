@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(189, 69%, 70%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 ;
+      width: 300px;
+    }
+    .login-form h2 {
+      text-align: center;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .login-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: hsl(302, 54%, 18%);
+      color: rgb(107, 26, 26);
+      border: none;
+      cursor: pointer;
+    }
+    .login-form input[type="submit"]:hover {
+      background-color: #005f8a;
+    }
+  </style>
+</head>
+<body>
+    <h1> Form đăng nhập </h1>
+    <form action="#" method="post">
+        <label for="username">Tên đăng nhập:</label><br />
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="password">Mật khẩu:</label><br />
+        <input type="password" id="password" name="password" required /><br /><br />
+
+        <button type="submit">Đăng nhập</button>
+    </form>
+
+</body>
+</html>

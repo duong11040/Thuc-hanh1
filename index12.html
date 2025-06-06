@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(192, 49%, 66%);
+      justify-content: center;
+      display: flex ;
+      align-items: center;
+      height: 100vh;
+    }
+    .feedback-form {
+      background-color: white;
+      padding: 100px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 ;
+    }
+    .feedback-form h2 {
+      text-align: center;
+    }
+    .feedback-form input, .feedback-form textarea, .feedback-form select {
+      width: 100%;
+      margin: 30px 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .feedback-form input[type="submit"] {
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .feedback-form input[type="submit"]:hover {
+      background-color: hsl(303, 100%, 27%);
+    }
+  </style>
+  </style>
+</head>
+<body>
+    <form class="survey-form" action="#" method="post">
+    <h2>Khảo sát ý kiến người dùng</h2>
+
+    <label>Bạn có hài lòng với dịch vụ của chúng tôi không? <span style="color:red">*</span></label>
+    <div class="options-group">
+      <input type="radio" id="satis-yes" name="satisfaction" value="Có" required />
+      <label for="satis-yes" style="display:inline;">Có</label><br/>
+      <input type="radio" id="satis-no" name="satisfaction" value="Không" />
+      <label for="satis-no" style="display:inline;">Không</label>
+    </div>
+
+    <label>Bạn thích những tính năng nào? (Chọn nhiều)</label>
+    <div class="options-group">
+      <input type="checkbox" id="feature1" name="features[]" value="Giao diện đẹp" />
+      <label for="feature1" style="display:inline;">Giao diện đẹp</label><br/>
+      <input type="checkbox" id="feature2" name="features[]" value="Dễ sử dụng" />
+      <label for="feature2" style="display:inline;">Dễ sử dụng</label><br/>
+      <input type="checkbox" id="feature3" name="features[]" value="Tốc độ nhanh" />
+      <label for="feature3" style="display:inline;">Tốc độ nhanh</label>
+    </div>
+
+    <label for="comments">Ý kiến khác:</label>
+    <textarea id="comments" name="comments" placeholder="Viết ý kiến của bạn..."></textarea>
+
+    <label for="rating">Đánh giá tổng thể: <span style="color:red">*</span></label>
+    <select id="rating" name="rating" required>
+      <option value="">--Chọn--</option>
+      <option value="1">1 - Rất tệ</option>
+      <option value="2">2 - Tệ</option>
+      <option value="3">3 - Bình thường</option>
+      <option value="4">4 - Tốt</option>
+      <option value="5">5 - Rất tốt</option>
+    </select>
+
+    <button type="submit">Gửi khảo sát</button>
+  </form>
+</body>
+</html>
